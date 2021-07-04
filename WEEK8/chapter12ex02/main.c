@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 struct TIME {
    int seconds;
    int minutes;
@@ -14,13 +15,13 @@ int main() {
 
    printf("Enter the biggest time. \n");
    printf("Enter the hours, minutes and seconds: ");
-   scanf("%d %d %d", &startTime.hours,
+   fscanf(stdin, "%d %d %d", &startTime.hours,
          &startTime.minutes,
          &startTime.seconds);
 
    printf("Enter the smallest time. \n");
    printf("Enter the hours, minutes and seconds: ");
-   scanf("%d %d %d", &stopTime.hours,
+   fscanf(stdin, "%d %d %d", &stopTime.hours,
          &stopTime.minutes,
          &stopTime.seconds);
 
